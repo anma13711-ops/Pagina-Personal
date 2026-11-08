@@ -1,0 +1,305 @@
+/* Selectores básicos y Tipografía Legible */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef5ff;
+    color: #1f2d3d;
+}
+
+/* Estructura del Header y Modelo de Caja */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(90deg, #0b3d91 0%, #1e6fd9 100%);
+    box-shadow: 0px 4px 12px rgba(11, 61, 145, 0.25);
+}
+
+/* Selector de ID */
+#logo a {
+    display: block;
+}
+
+#logo img {
+    display: block;
+    height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: 8px 14px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Contenido Principal */
+main {
+    text-align: center;
+    padding: 60px 20px;
+    min-height: 50vh;
+}
+
+h1 {
+    font-size: 34px;
+    color: #0b3d91;
+    margin-bottom: 40px;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 5px;
+    margin: 12px auto 0;
+    background-color: #1e6fd9;
+    border-radius: 3px;
+}
+
+h2 {
+    color: #0b3d91;
+}
+
+/* Selector de Clase para contenedor */
+.hero-container {
+    background-color: #ffffff;
+    border-top: 6px solid #1e6fd9;
+    border-radius: 14px;
+    padding: 40px;
+    max-width: 700px;
+    margin: 0 auto; /* Box model: centrado */
+    box-shadow: 0px 6px 18px rgba(30, 111, 217, 0.18);
+    line-height: 1.6;
+}
+
+/* Diseño de Botón Básico con Pseudo-clases */
+.boton-primario {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background-color: #1e6fd9;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.boton-primario:hover {
+    background-color: #0b3d91;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 14px rgba(11, 61, 145, 0.35);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    border-top: 4px solid #1e6fd9;
+}
+
+.redes-sociales img, .chat img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+/* ---------- Sobre mí ---------- */
+.sobre-mi-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-top: 6px solid #1e6fd9;
+    border-radius: 14px;
+    box-shadow: 0px 6px 18px rgba(30, 111, 217, 0.18);
+}
+
+.sobre-mi-container img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border: 4px solid #1e6fd9;
+    border-radius: 12px;
+}
+
+.sobre-mi-container p {
+    max-width: 450px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* ---------- Servicios ---------- */
+.servicio-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    text-align: left;
+    background-color: #ffffff;
+    border-left: 6px solid #1e6fd9;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(30, 111, 217, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 22px rgba(30, 111, 217, 0.28);
+}
+
+.servicio-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.servicio-item h2 {
+    margin-top: 0;
+}
+
+/* ---------- Portafolio ---------- */
+.grid-portafolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.proyecto {
+    background-color: #ffffff;
+    border-top: 6px solid #1e6fd9;
+    border-radius: 12px;
+    padding: 30px 22px 25px;
+    text-align: left;
+    box-shadow: 0px 4px 12px rgba(30, 111, 217, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 12px 24px rgba(30, 111, 217, 0.3);
+}
+
+.numero {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #1e6fd9;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.proyecto h2 {
+    font-size: 22px;
+    margin: 15px 0 10px;
+}
+
+.proyecto p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 0 18px;
+}
+
+.tecnologias {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.tecnologias li {
+    padding: 5px 12px;
+    background-color: #e3f0ff;
+    color: #0b4a9e;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+/* ---------- Contacto ---------- */
+.contacto-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: left;
+    background-color: #ffffff;
+    border-top: 6px solid #1e6fd9;
+    border-radius: 14px;
+    box-shadow: 0px 6px 18px rgba(30, 111, 217, 0.18);
+}
+
+.info-contacto img {
+    width: 260px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.info-contacto p {
+    margin: 8px 0;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 350px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 10px;
+    border: 2px solid #9fc4f5;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    outline: none;
+    border-color: #1e6fd9;
+}
+
+.formulario-contacto button {
+    align-self: flex-end;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 0;
+}
