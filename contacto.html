@@ -9,7 +9,9 @@
 <body>
     <header>
         <div id="logo"><a href="index.html"><img src="logo.png" alt="Logo de Angel Salazar: monograma A y S dentro de un escudo dorado"></a></div>
-        <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburguesa" aria-label="Abrir menú">&#9776;</label>
+        <nav aria-label="Menú principal">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre-mi.html">Sobre mí</a></li>
@@ -28,6 +30,7 @@
                 <p>Dirección: León, Guanajuato</p>
                 <p>Correo: anma13711@gmail.com</p>
                 <p>Teléfono: 477 0101 010</p>
+                <a class="como-llegar" href="https://www.google.com/maps/search/Universidad+Tecnologica+de+Leon" target="_blank" rel="noopener">&#128205; Cómo llegar</a>
             </div>
             <form class="formulario-contacto">
                 <input type="text" name="nombre" placeholder="Nombre" aria-label="Nombre">

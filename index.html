@@ -10,7 +10,9 @@
 <body>
     <header>
         <div id="logo"><a href="index.html"><img src="logo.png" alt="Logo de Angel Salazar: monograma A y S dentro de un escudo dorado"></a></div>
-        <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburguesa" aria-label="Abrir menú">&#9776;</label>
+        <nav aria-label="Menú principal">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre-mi.html">Sobre mí</a></li>
@@ -24,8 +26,19 @@
     <main>
         <h1>Angel Manuel Salazar Sánchez</h1>
         <section class="hero-container">
+            <img class="foto-hero" src="foto-perfil.jpg" alt="Fotografía de perfil de Angel Manuel Salazar Sánchez">
+            <div class="hero-texto">
             <p>Soy estudiante de Ingeniería en Software y Tecnologías de la Información, apasionado por el desarrollo web, la creación de aplicaciones móviles y la optimización de hardware. Disfruto transformar ideas en soluciones tecnológicas eficientes, tanto en el código como en los componentes físicos.</p>
             <a href="portafolio.html" class="boton-primario">Ver mi portafolio</a>
+            </div>
+        </section>
+        <section class="proyectos">
+            <h2>Proyectos</h2>
+            <div class="carrusel" tabindex="0" aria-label="Carrusel de proyectos">
+                <figure class="slide"><img src="proyecto1.jpg" alt="Captura del proyecto StockManager"><figcaption>StockManager</figcaption></figure>
+                <figure class="slide"><img src="proyecto2.jpg" alt="Captura del proyecto RunTrack"><figcaption>RunTrack</figcaption></figure>
+                <figure class="slide"><img src="proyecto3.jpg" alt="Captura del proyecto CityTour"><figcaption>CityTour</figcaption></figure>
+            </div>
         </section>
     </main>
 
